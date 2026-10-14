@@ -14,9 +14,9 @@ external/sqlite
 The upgrade steps are:
 
 *   Select a version for the upgrade.
-*   Find the amalgamation zip file. For release 3.50.1, the URL is
-    [sqlite-amalgamation-3500100.zip](https://www.sqlite.org/2025/sqlite-amalgamation-3500100.zip).
-*   Extract the content of the direcoty into `external/sqlite/src`,
+*   Find the amalgamation zip file. For release 3.53.4, the URL is
+    [sqlite-amalgamation-3530400.zip](https://www.sqlite.org/2026/sqlite-amalgamation-3530400.zip).
+*   Extract the content of the directory into `external/sqlite/src`,
     it should contain the following files:
     * `shell.c`
     * `sqlite3.c`
@@ -27,8 +27,8 @@ The upgrade steps are:
 frameworks/support/sqlite/sqlite-bundled/build.gradle
 ```
 ```
-    it.sqliteVersion.set("3.50.1")
-    it.sqliteReleaseYear.set(2025)
+    it.sqliteVersion.set("3.53.4")
+    it.sqliteReleaseYear.set(2026)
 ```
 * Update `METADATA` and `README.version` located in `external/sqlite`.
 
@@ -55,13 +55,13 @@ well and it must be updated within `androidx-main` at the same time as the
 source.
 
 ```text
-frameworks/support/sqlite/integration-tests/driver-conformance-test/src/commonTest/kotlin/androidx/sqlite/driver/test/BaseBundledConformanceTest.kt
+frameworks/support/sqlite/integration-tests/driver-conformance-test/src/nonWebTest/kotlin/androidx/sqlite/driver/test/BaseBundledConformanceTest.kt
 ```
 
 Update the following constant:
 
 ```kotlin
-    const val EXPECTED_SQLITE_VERSION = "3.50.1"
+    const val EXPECTED_SQLITE_VERSION = "3.53.4"
 ```
 
 ## Recommended Tests
