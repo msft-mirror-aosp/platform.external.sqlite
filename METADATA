@@ -9,10 +9,10 @@ third_party {
   }
   url {
     type: ARCHIVE
-    value: "https://www.sqlite.org/2025/sqlite-amalgamation-3500100.zip"
+    value: "https://www.sqlite.org/2026/sqlite-amalgamation-3530400.zip"
   }
-  version: "3.50.1"
-  last_upgrade_date { year: 2025 month: 5 day: 29 }
+  version: "3.53.4"
+  last_upgrade_date { year: 2026 month: 7 day: 24 }
   license_type: NOTICE
 
   security: {
